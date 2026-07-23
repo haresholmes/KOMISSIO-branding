@@ -1,0 +1,10 @@
+<svg width="240" height="52" viewBox="0 0 240 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- KOMISSIO Logo — Full teal background lockup -->
+  <rect x="0" y="0" width="240" height="52" rx="8" fill="#0D5C63"/>
+  <!-- Mark white -->
+  <rect x="12" y="8" width="36" height="14" rx="3" fill="#ffffff"/>
+  <rect x="12" y="26" width="16" height="18" rx="3" fill="#ffffff" opacity="0.5"/>
+  <rect x="32" y="26" width="16" height="18" rx="3" fill="#C9A84C"/>
+  <!-- Wordmark white -->
+  <text x="60" y="33" font-family="'Helvetica Neue', 'Arial', sans-serif" font-size="19" font-weight="700" letter-spacing="-0.3" fill="#ffffff">KOMISSIO</text>
+</svg>

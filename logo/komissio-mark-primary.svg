@@ -1,0 +1,9 @@
+<svg width="200" height="200" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- KOMISSIO Mark — OS Layer Concept -->
+  <!-- Top bar: the operating system layer beneath existing tools -->
+  <rect x="0" y="0" width="52" height="20" rx="5" fill="#0D5C63"/>
+  <!-- Bottom-left: operational module -->
+  <rect x="0" y="26" width="23" height="26" rx="5" fill="#0D5C63" opacity="0.45"/>
+  <!-- Bottom-right: commission / value capture layer (gold) -->
+  <rect x="29" y="26" width="23" height="26" rx="5" fill="#C9A84C"/>
+</svg>
