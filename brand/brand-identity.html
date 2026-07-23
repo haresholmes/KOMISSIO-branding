@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KOMISSIO — Brand Identity System 2024</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --p:   #6D28D9;  /* Violet — primary brand */
+    --pm:  #7C3AED;  /* Violet Mid */
+    --pv:  #8B5CF6;  /* Violet Vivid */
+    --pl:  #A78BFA;  /* Violet Light */
+    --pc:  #C4B5FD;  /* Violet Contrast */
+    --ps:  #EDE9FE;  /* Violet Surface */
+    --po:  #F5F3FF;  /* Violet Off-white */
+    --dp:  #4C1D95;  /* Violet Deep */
+    --d:   #09061A;  /* Near-black */
+    --dc:  #150D2E;  /* Dark card */
+    --ink: #1E1B4B;
+    --mu:  #6B6785;
+    --w:   #FDFCFF;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--po); color: var(--ink); }
+
+  /* ── Nav ── */
+  nav {
+    position: sticky; top: 0; z-index: 200;
+    background: rgba(245,243,255,0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(109,40,217,0.09);
+    padding: 13px 52px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+
+  /* ── Mark SVG symbol ── */
+  .mark { display: inline-block; flex-shrink: 0; }
+
+  /* ── Wordmark ── */
+  .wordmark { display: inline-flex; align-items: center; gap: 10px; }
+  .wordmark-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    user-select: none;
+  }
+
+  /* ── Mono label ── */
+  .mlbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px; font-weight: 500;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--mu);
+  }
+  .mlbl.inv { color: rgba(255,255,255,0.28); }
+
+  /* ── Rule ── */
+  .rule { width: 36px; height: 2px; background: var(--p); border-radius: 1px; margin: 14px 0 22px; }
+  .rule.inv { background: rgba(255,255,255,0.18); }
+
+  /* ── Sections ── */
+  .section { padding: 88px 52px; }
+  .section-inner { max-width: 1160px; margin: 0 auto; }
+  .section h2 { font-size: 48px; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 10px; line-height: 1.1; }
+  .section p.lead { font-size: 15px; color: var(--mu); line-height: 1.7; max-width: 480px; margin-bottom: 52px; }
+
+  .hero {
+    background: var(--d); position: relative; overflow: hidden;
+    padding: 110px 52px 120px; text-align: center;
+  }
+  .hero .dot-grid {
+    position: absolute; inset: 0; pointer-events: none;
+    background-image: radial-gradient(circle, rgba(139,92,246,0.4) 1.4px, transparent 1.4px);
+    background-size: 44px 44px; opacity: 0.28;
+  }
+  .hero .glow {
+    position: absolute; top: 40%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 520px; height: 520px;
+    background: radial-gradient(circle, rgba(124,58,237,0.22) 0%, transparent 68%);
+    pointer-events: none;
+  }
+  .hero .accent-bar {
+    position: absolute; left: 0; top: 20%; width: 3px; height: 48%;
+    background: linear-gradient(to bottom, transparent, var(--pm), transparent);
+    border-radius: 0 2px 2px 0;
+  }
+  .hero-inner { position: relative; max-width: 760px; margin: 0 auto; }
+  .hero-name {
+    font-size: 76px; font-weight: 800;
+    letter-spacing: -0.045em; color: #fff; line-height: 1; margin-bottom: 18px;
+  }
+  .hero-tagline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: rgba(255,255,255,0.28);
+    margin-bottom: 40px;
+  }
+  .pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px; font-weight: 600; letter-spacing: 0.14em;
+    text-transform: uppercase; padding: 5px 13px; border-radius: 4px;
+    display: inline-block;
+  }
+  .pill-solid { background: var(--p); color: #fff; }
+  .pill-outline { border: 1px solid rgba(167,139,250,0.35); color: var(--pl); }
+
+  /* ── Mark section ── */
+  .mark-variants {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px;
+  }
+  .mark-card {
+    border-radius: 18px; padding: 52px 44px;
+    display: flex; flex-direction: column; align-items: center; gap: 22px;
+  }
+  .mark-card.light { background: var(--w); border: 1px solid rgba(109,40,217,0.1); }
+  .mark-card.dark  { background: var(--d); border: 1px solid rgba(255,255,255,0.05); }
+  .mark-card.surf  { background: var(--ps); border: 1px solid var(--pc); }
+  .mark-label { text-align: center; }
+  .mark-label .name { font-size: 12px; font-weight: 700; margin-bottom: 4px; }
+  .mark-label .sub  { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.08em; color: var(--mu); }
+  .mark-label.inv .name { color: #fff; }
+  .mark-label.inv .sub  { color: rgba(255,255,255,0.26); }
+
+  .scale-row {
+    background: var(--w); border: 1px solid rgba(109,40,217,0.08);
+    border-radius: 16px; padding: 32px 44px;
+    display: flex; align-items: flex-end; gap: 36px;
+  }
+  .scale-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .scale-item span { font-family: 'JetBrains Mono', monospace; font-size: 8px; color: var(--mu); }
+
+  /* ── Color section ── */
+  .color-dark { background: var(--d); }
+  .swatch-grid-7 { display: grid; grid-template-columns: repeat(7,1fr); gap: 12px; margin-bottom: 24px; }
+  .swatch-grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+  .swatch {
+    border-radius: 10px; overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.04);
+  }
+  .swatch .chip { height: 64px; }
+  .swatch .info { padding: 9px 11px; background: rgba(255,255,255,0.03); }
+  .swatch .info .sn { font-size: 11px; font-weight: 600; color: #fff; margin-bottom: 2px; }
+  .swatch .info .sh { font-family: 'JetBrains Mono', monospace; font-size: 8px; color: rgba(255,255,255,0.3); }
+  .swatch.light { border: 1px solid rgba(109,40,217,0.12); }
+  .swatch.light .chip { height: 48px; }
+  .swatch.light .info { background: var(--w); }
+  .swatch.light .info .sn { color: var(--ink); }
+  .swatch.light .info .sh { color: var(--mu); }
+
+  /* ── Typography section ── */
+  .type-row { border-top: 1px solid rgba(109,40,217,0.09); padding-top: 24px; margin-bottom: 20px; }
+  .type-row .mlbl { margin-bottom: 10px; }
+
+  /* ── Wordmark section ── */
+  .lockup-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .lockup-box {
+    border-radius: 18px; padding: 56px 48px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .lockup-box.light { background: var(--po); border: 1px solid rgba(109,40,217,0.09); }
+  .lockup-box.dark  { background: var(--d); border: 1px solid rgba(255,255,255,0.05); }
+  .lockup-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+  .lockup-sm {
+    border-radius: 14px; padding: 28px 26px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .lockup-sm.po { background: var(--po); border: 1px solid rgba(109,40,217,0.09); }
+  .lockup-sm.vio { background: var(--p); }
+  .lockup-sm.surf { background: var(--ps); border: 1px solid var(--pc); }
+  .lockup-sm.wh { background: var(--w); border: 1px solid rgba(109,40,217,0.09); }
+
+  /* ── Icon section ── */
+  .icon-row { display: flex; gap: 28px; align-items: flex-end; flex-wrap: wrap; margin-bottom: 48px; }
+  .icon-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .icon-tile {
+    display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(145deg, var(--pm) 0%, var(--dp) 100%);
+    flex-shrink: 0;
+  }
+  .icon-variants { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+  .icon-variant { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .icon-variant .tile80 {
+    width: 80px; height: 80px; border-radius: 18px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 18px rgba(109,40,217,0.32);
+  }
+
+  /* ── Usage section ── */
+  .usage-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+  .usage-card {
+    background: var(--w); border: 1px solid rgba(109,40,217,0.09);
+    border-radius: 16px; padding: 32px;
+  }
+  .usage-card .mlbl { margin-bottom: 16px; }
+  .usage-card p { font-size: 12px; color: var(--mu); line-height: 1.55; margin-top: 16px; }
+
+  /* ── Footer ── */
+  footer {
+    background: var(--d); border-top: 1px solid rgba(255,255,255,0.04);
+    padding: 44px 52px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<!-- Mark SVG symbols -->
+<svg style="display:none">
+  <!-- Primary mark (on light) -->
+  <symbol id="m-primary" viewBox="0 0 64 64">
+    <rect x="0" y="0"  width="64" height="22" rx="5.5" fill="#6D28D9"/>
+    <rect x="0" y="29" width="28" height="35" rx="5.5" fill="#4C1D95"/>
+    <rect x="36" y="29" width="28" height="35" rx="5.5" fill="#A78BFA"/>
+  </symbol>
+  <!-- Reversed mark (on dark) -->
+  <symbol id="m-inv" viewBox="0 0 64 64">
+    <rect x="0" y="0"  width="64" height="22" rx="5.5" fill="white"/>
+    <rect x="0" y="29" width="28" height="35" rx="5.5" fill="white" opacity="0.46"/>
+    <rect x="36" y="29" width="28" height="35" rx="5.5" fill="white" opacity="0.88"/>
+  </symbol>
+  <!-- Mono mark -->
+  <symbol id="m-mono" viewBox="0 0 64 64">
+    <rect x="0" y="0"  width="64" height="22" rx="5.5" fill="#6D28D9"/>
+    <rect x="0" y="29" width="28" height="35" rx="5.5" fill="#6D28D9" opacity="0.38"/>
+    <rect x="36" y="29" width="28" height="35" rx="5.5" fill="#6D28D9" opacity="0.72"/>
+  </symbol>
+  <!-- Stretched (don't) -->
+  <symbol id="m-dont-stretch" viewBox="0 0 64 32">
+    <rect x="0" y="0"  width="64" height="10" rx="3" fill="#8B5CF6"/>
+    <rect x="0" y="14" width="28" height="18" rx="3" fill="#4C1D95"/>
+    <rect x="36" y="14" width="28" height="18" rx="3" fill="#A78BFA"/>
+  </symbol>
+</svg>
+
+<!-- Nav -->
+<nav>
+  <div class="wordmark">
+    <svg width="26" height="26"><use href="#m-primary"/></svg>
+    <span class="wordmark-text" style="font-size:19px;color:#1E1B4B;">KOMISSIO</span>
+  </div>
+  <span class="mlbl">Brand Identity System — 2024</span>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="dot-grid"></div>
+  <div class="glow"></div>
+  <div class="accent-bar"></div>
+  <div class="hero-inner">
+    <div style="display:inline-flex;margin-bottom:40px;">
+      <svg width="128" height="128"><use href="#m-inv"/></svg>
+    </div>
+    <div class="hero-name">KOMISSIO</div>
+    <div class="hero-tagline">The OS for UAE Business</div>
+    <div style="display:inline-flex;gap:9px;">
+      <span class="pill pill-solid">Built in Dubai</span>
+      <span class="pill pill-outline">Purple Era — v2</span>
+    </div>
+  </div>
+</section>
+
+<!-- 01 The Mark -->
+<section class="section">
+  <div class="section-inner">
+    <div class="mlbl">01 — The Mark</div>
+    <div class="rule"></div>
+    <h2>The KOMISSIO mark.</h2>
+    <p class="lead">Three geometric blocks. One unified OS layer on top. Two below — the commission split made visible. Deep violet and lavender: two sides of every deal.</p>
+
+    <div class="mark-variants">
+      <div class="mark-card light">
+        <svg width="80" height="80"><use href="#m-primary"/></svg>
+        <div class="mark-label">
+          <div class="name">Primary</div>
+          <div class="sub">Light backgrounds</div>
+        </div>
+      </div>
+      <div class="mark-card dark">
+        <svg width="80" height="80"><use href="#m-inv"/></svg>
+        <div class="mark-label inv">
+          <div class="name">Reversed</div>
+          <div class="sub">Dark backgrounds</div>
+        </div>
+      </div>
+      <div class="mark-card surf">
+        <svg width="80" height="80"><use href="#m-mono"/></svg>
+        <div class="mark-label">
+          <div class="name">Monochrome</div>
+          <div class="sub">Single-colour contexts</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scale-row">
+      <span class="mlbl" style="writing-mode:vertical-lr;margin-right:4px;">Scale</span>
+      <div class="scale-item"><svg width="80" height="80"><use href="#m-primary"/></svg><span>80px</span></div>
+      <div class="scale-item"><svg width="64" height="64"><use href="#m-primary"/></svg><span>64px</span></div>
+      <div class="scale-item"><svg width="48" height="48"><use href="#m-primary"/></svg><span>48px</span></div>
+      <div class="scale-item"><svg width="36" height="36"><use href="#m-primary"/></svg><span>36px</span></div>
+      <div class="scale-item"><svg width="24" height="24"><use href="#m-primary"/></svg><span>24px</span></div>
+      <div class="scale-item"><svg width="16" height="16"><use href="#m-primary"/></svg><span>16px</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 Color System -->
+<section class="section color-dark">
+  <div class="section-inner">
+    <div class="mlbl inv">02 — Color System</div>
+    <div class="rule inv"></div>
+    <h2 style="color:#fff;">Violet-forward.<br>Purpose-driven.</h2>
+    <p class="lead" style="color:rgba(255,255,255,0.4);">Every shade earns its place. The palette reads as one coherent system — deep to light, dark to surface.</p>
+
+    <div class="mlbl inv" style="margin-bottom:14px;">Primary violet ramp</div>
+    <div class="swatch-grid-7">
+      <div class="swatch"><div class="chip" style="background:#09061A"></div><div class="info"><div class="sn">Void</div><div class="sh">#09061A</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#150D2E"></div><div class="info"><div class="sn">Dark</div><div class="sh">#150D2E</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#4C1D95"></div><div class="info"><div class="sn">Deep</div><div class="sh">#4C1D95</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#6D28D9"></div><div class="info"><div class="sn">Violet</div><div class="sh">#6D28D9</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#7C3AED"></div><div class="info"><div class="sn">Mid</div><div class="sh">#7C3AED</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#8B5CF6"></div><div class="info"><div class="sn">Vivid</div><div class="sh">#8B5CF6</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#A78BFA"></div><div class="info"><div class="sn">Light</div><div class="sh">#A78BFA</div></div></div>
+    </div>
+
+    <div class="mlbl inv" style="margin-bottom:14px;">Surface &amp; neutral</div>
+    <div class="swatch-grid-4">
+      <div class="swatch light"><div class="chip" style="background:#C4B5FD"></div><div class="info"><div class="sn">Pale</div><div class="sh">#C4B5FD</div></div></div>
+      <div class="swatch light"><div class="chip" style="background:#EDE9FE"></div><div class="info"><div class="sn">Surface</div><div class="sh">#EDE9FE</div></div></div>
+      <div class="swatch light"><div class="chip" style="background:#F5F3FF"></div><div class="info"><div class="sn">Off-white</div><div class="sh">#F5F3FF</div></div></div>
+      <div class="swatch light"><div class="chip" style="background:#FDFCFF"></div><div class="info"><div class="sn">White</div><div class="sh">#FDFCFF</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 Typography -->
+<section class="section">
+  <div class="section-inner">
+    <div class="mlbl">03 — Typography</div>
+    <div class="rule"></div>
+    <h2>Type system.</h2>
+    <p class="lead">Plus Jakarta Sans for all display and UI. JetBrains Mono for data labels, metadata, and system output.</p>
+
+    <div class="type-row">
+      <div class="mlbl">Display — 72 / 800</div>
+      <div style="font-size:72px;font-weight:800;letter-spacing:-0.04em;line-height:1;color:#1E1B4B;">Infrastructure.</div>
+    </div>
+    <div class="type-row">
+      <div class="mlbl">H1 — 52 / 700</div>
+      <div style="font-size:52px;font-weight:700;letter-spacing:-0.03em;line-height:1.05;color:#1E1B4B;">The OS for UAE Business.</div>
+    </div>
+    <div class="type-row">
+      <div class="mlbl">H2 — 38 / 700</div>
+      <div style="font-size:38px;font-weight:700;letter-spacing:-0.03em;line-height:1.1;color:#1E1B4B;">Commission, Legal, Accounting, Property.</div>
+    </div>
+    <div class="type-row">
+      <div class="mlbl">H3 — 26 / 600</div>
+      <div style="font-size:26px;font-weight:600;letter-spacing:-0.03em;line-height:1.2;color:#1E1B4B;">Every deal. One system. Live.</div>
+    </div>
+    <div class="type-row">
+      <div class="mlbl">Body — 15 / 400</div>
+      <p style="font-size:15px;line-height:1.7;color:#1E1B4B;max-width:600px;margin:0;">KOMISSIO is the connective tissue beneath every tool a UAE company already uses — turning scattered activity into one live, reconciled operating system.</p>
+    </div>
+    <div class="type-row" style="margin-bottom:0;">
+      <div class="mlbl">JetBrains Mono — 10 / 500 / 0.14em</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#6B6785;">Commission Revenue · AED 284,500 · Status: Active · Q3 2024</div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 Wordmark -->
+<section class="section" style="background:var(--w);border-top:1px solid rgba(109,40,217,0.07);">
+  <div class="section-inner">
+    <div class="mlbl">04 — Wordmark</div>
+    <div class="rule"></div>
+    <h2>Lockups.</h2>
+    <p class="lead">The mark and wordmark appear together whenever space allows. The mark alone is reserved for small-size and icon contexts.</p>
+
+    <div class="lockup-2">
+      <div class="lockup-box light">
+        <div class="wordmark">
+          <svg width="44" height="44"><use href="#m-primary"/></svg>
+          <span class="wordmark-text" style="font-size:32px;color:#1E1B4B;">KOMISSIO</span>
+        </div>
+      </div>
+      <div class="lockup-box dark">
+        <div class="wordmark">
+          <svg width="44" height="44"><use href="#m-inv"/></svg>
+          <span class="wordmark-text" style="font-size:32px;color:#fff;">KOMISSIO</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lockup-4">
+      <div class="lockup-sm po">
+        <div class="mlbl">Nav / 24px</div>
+        <div class="wordmark">
+          <svg width="24" height="24"><use href="#m-primary"/></svg>
+          <span class="wordmark-text" style="font-size:17px;color:#1E1B4B;">KOMISSIO</span>
+        </div>
+      </div>
+      <div class="lockup-sm vio">
+        <div class="mlbl inv">On violet</div>
+        <div class="wordmark">
+          <svg width="24" height="24"><use href="#m-inv"/></svg>
+          <span class="wordmark-text" style="font-size:17px;color:#fff;">KOMISSIO</span>
+        </div>
+      </div>
+      <div class="lockup-sm surf">
+        <div class="mlbl">On surface</div>
+        <div class="wordmark">
+          <svg width="24" height="24"><use href="#m-primary"/></svg>
+          <span class="wordmark-text" style="font-size:17px;color:#1E1B4B;">KOMISSIO</span>
+        </div>
+      </div>
+      <div class="lockup-sm wh">
+        <div class="mlbl">Mark-only</div>
+        <svg width="44" height="44"><use href="#m-primary"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 App Icon -->
+<section class="section">
+  <div class="section-inner">
+    <div class="mlbl">05 — App Icon</div>
+    <div class="rule"></div>
+    <h2>Icon tile.</h2>
+    <p class="lead">Rounded square tile with gradient violet ground. Holds at every platform size from 16px favicon to 1024px App Store.</p>
+
+    <div class="icon-row">
+      <div class="icon-item">
+        <div class="icon-tile" style="width:128px;height:128px;border-radius:28px;box-shadow:0 9px 28px rgba(109,40,217,0.38);">
+          <svg width="67" height="67"><use href="#m-inv"/></svg>
+        </div>
+        <span class="mlbl">128px</span>
+      </div>
+      <div class="icon-item">
+        <div class="icon-tile" style="width:96px;height:96px;border-radius:21px;box-shadow:0 7px 21px rgba(109,40,217,0.38);">
+          <svg width="50" height="50"><use href="#m-inv"/></svg>
+        </div>
+        <span class="mlbl">96px</span>
+      </div>
+      <div class="icon-item">
+        <div class="icon-tile" style="width:72px;height:72px;border-radius:16px;box-shadow:0 5px 16px rgba(109,40,217,0.38);">
+          <svg width="37" height="37"><use href="#m-inv"/></svg>
+        </div>
+        <span class="mlbl">72px</span>
+      </div>
+      <div class="icon-item">
+        <div class="icon-tile" style="width:48px;height:48px;border-radius:11px;box-shadow:0 3px 11px rgba(109,40,217,0.38);">
+          <svg width="25" height="25"><use href="#m-inv"/></svg>
+        </div>
+        <span class="mlbl">48px</span>
+      </div>
+      <div class="icon-item">
+        <div class="icon-tile" style="width:36px;height:36px;border-radius:8px;box-shadow:0 3px 8px rgba(109,40,217,0.38);">
+          <svg width="19" height="19"><use href="#m-inv"/></svg>
+        </div>
+        <span class="mlbl">36px</span>
+      </div>
+      <div class="icon-item">
+        <div class="icon-tile" style="width:24px;height:24px;border-radius:5px;box-shadow:0 2px 6px rgba(109,40,217,0.38);">
+          <svg width="12" height="12"><use href="#m-inv"/></svg>
+        </div>
+        <span class="mlbl">24px</span>
+      </div>
+      <div class="icon-item">
+        <div class="icon-tile" style="width:16px;height:16px;border-radius:3px;box-shadow:0 1px 4px rgba(109,40,217,0.38);">
+          <svg width="8" height="8"><use href="#m-inv"/></svg>
+        </div>
+        <span class="mlbl">16px</span>
+      </div>
+    </div>
+
+    <div class="icon-variants">
+      <div class="icon-variant">
+        <div class="tile80" style="background:linear-gradient(145deg,#7C3AED,#4C1D95);"><svg width="42" height="42"><use href="#m-inv"/></svg></div>
+        <span class="mlbl">Default</span>
+      </div>
+      <div class="icon-variant">
+        <div class="tile80" style="background:linear-gradient(145deg,#8B5CF6,#6D28D9);"><svg width="42" height="42"><use href="#m-inv"/></svg></div>
+        <span class="mlbl">Vivid</span>
+      </div>
+      <div class="icon-variant">
+        <div class="tile80" style="background:linear-gradient(145deg,#3B0764,#09061A);"><svg width="42" height="42"><use href="#m-inv"/></svg></div>
+        <span class="mlbl">Night</span>
+      </div>
+      <div class="icon-variant">
+        <div class="tile80" style="background:linear-gradient(145deg,#A78BFA,#7C3AED);"><svg width="42" height="42"><use href="#m-inv"/></svg></div>
+        <span class="mlbl">Soft</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 Usage Rules -->
+<section class="section" style="background:var(--ps);border-top:1px solid var(--pc);">
+  <div class="section-inner">
+    <div class="mlbl">06 — Usage Rules</div>
+    <div class="rule"></div>
+    <h2>Clear space &amp; don&apos;ts.</h2>
+    <p class="lead">The mark needs room to breathe. Minimum clear space equals the height of the top bar on all sides.</p>
+
+    <div class="usage-grid">
+      <div class="usage-card">
+        <div class="mlbl" style="margin-bottom:16px;">Clear space</div>
+        <div style="position:relative;display:inline-flex;padding:18px;border:1px dashed #C4B5FD;border-radius:8px;">
+          <svg width="48" height="48"><use href="#m-primary"/></svg>
+          <div style="position:absolute;top:2px;left:50%;transform:translateX(-50%);font-family:'JetBrains Mono',monospace;font-size:7px;color:#8B5CF6;">↕ x</div>
+        </div>
+        <p>Keep clear space equal to the mark's top-bar height (≈34%) on all sides.</p>
+      </div>
+      <div class="usage-card">
+        <div class="mlbl" style="margin-bottom:16px;color:#C0392B;">✗ Don&apos;t stretch</div>
+        <div style="position:relative;display:inline-flex;">
+          <svg width="80" height="40"><use href="#m-dont-stretch"/></svg>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,0,0,0.05);border-radius:4px;">
+            <span style="font-size:28px;opacity:0.25;">✗</span>
+          </div>
+        </div>
+        <p>Never distort proportions. The 64:22:35 ratio is fixed.</p>
+      </div>
+      <div class="usage-card">
+        <div class="mlbl" style="margin-bottom:16px;color:#C0392B;">✗ Don&apos;t use on clashing bgs</div>
+        <div style="position:relative;background:#A78BFA;border-radius:8px;padding:16px;display:inline-flex;">
+          <svg width="48" height="48"><use href="#m-primary"/></svg>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,0,0,0.05);border-radius:8px;">
+            <span style="font-size:28px;opacity:0.25;">✗</span>
+          </div>
+        </div>
+        <p>Never place the primary mark on a violet-light or similar low-contrast background.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wordmark">
+    <svg width="26" height="26"><use href="#m-inv"/></svg>
+    <span class="wordmark-text" style="font-size:19px;color:#fff;">KOMISSIO</span>
+  </div>
+  <span class="mlbl inv">KOMISSIO — BUILT IN DUBAI — BRAND IDENTITY 2024</span>
+</footer>
+
+</body>
+</html>
