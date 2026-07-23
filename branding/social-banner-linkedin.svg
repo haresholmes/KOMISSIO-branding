@@ -1,0 +1,45 @@
+<svg width="1584" height="396" viewBox="0 0 1584 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- LinkedIn Banner 1584x396 -->
+  <rect width="1584" height="396" fill="#0E1117"/>
+
+  <!-- Grid -->
+  <line x1="0" y1="99" x2="1584" y2="99" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="0" y1="198" x2="1584" y2="198" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="0" y1="297" x2="1584" y2="297" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="396" y1="0" x2="396" y2="396" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="792" y1="0" x2="792" y2="396" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="1188" y1="0" x2="1188" y2="396" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+
+  <!-- Mark -->
+  <rect x="100" y="110" width="140" height="54" rx="8" fill="#0D5C63"/>
+  <rect x="100" y="174" width="62" height="72" rx="8" fill="#0D5C63" opacity="0.4"/>
+  <rect x="178" y="174" width="62" height="72" rx="8" fill="#C9A84C"/>
+
+  <!-- Wordmark -->
+  <text x="276" y="216" font-family="'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-1.5" fill="#ffffff">KOMISSIO</text>
+
+  <!-- Gold divider -->
+  <rect x="276" y="240" width="48" height="2" fill="#C9A84C"/>
+
+  <!-- Tagline -->
+  <text x="276" y="274" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.55)" letter-spacing="0.3">Operating System for UAE Business</text>
+
+  <!-- Right side: pillars -->
+  <text x="1400" y="148" font-family="'Courier New', monospace" font-size="13" fill="rgba(255,255,255,0.25)" text-anchor="end" letter-spacing="1">SALES</text>
+  <text x="1400" y="172" font-family="'Courier New', monospace" font-size="13" fill="rgba(255,255,255,0.25)" text-anchor="end" letter-spacing="1">ACCOUNTING</text>
+  <text x="1400" y="196" font-family="'Courier New', monospace" font-size="13" fill="rgba(255,255,255,0.25)" text-anchor="end" letter-spacing="1">LEGAL</text>
+  <text x="1400" y="220" font-family="'Courier New', monospace" font-size="13" fill="rgba(255,255,255,0.25)" text-anchor="end" letter-spacing="1">PROPERTY</text>
+
+  <!-- Right accent marks -->
+  <rect x="1432" y="136" width="120" height="10" rx="2" fill="#0D5C63" opacity="0.5"/>
+  <rect x="1432" y="160" width="120" height="10" rx="2" fill="#0D5C63" opacity="0.35"/>
+  <rect x="1432" y="184" width="120" height="10" rx="2" fill="#0D5C63" opacity="0.35"/>
+  <rect x="1432" y="208" width="120" height="10" rx="2" fill="#C9A84C" opacity="0.5"/>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="380" width="1584" height="16" fill="#0D5C63" opacity="0.4"/>
+  <rect x="0" y="380" width="396" height="16" fill="#0D5C63"/>
+  <rect x="396" y="380" width="396" height="16" fill="#0D5C63" opacity="0.6"/>
+  <rect x="792" y="380" width="396" height="16" fill="#0D5C63" opacity="0.4"/>
+  <rect x="1188" y="380" width="396" height="16" fill="#C9A84C" opacity="0.5"/>
+</svg>

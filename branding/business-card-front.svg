@@ -1,0 +1,32 @@
+<svg width="1050" height="600" viewBox="0 0 1050 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Business Card Front — 3.5" x 2" at 300dpi (1050x600px) -->
+  <rect width="1050" height="600" rx="24" fill="#FDFCF9"/>
+  <rect x="0" y="0" width="1050" height="600" rx="24" stroke="rgba(19,21,26,0.08)" stroke-width="2"/>
+
+  <!-- Top accent bar -->
+  <rect x="80" y="80" width="52" height="20" rx="5" fill="#0D5C63"/>
+  <rect x="80" y="106" width="23" height="26" rx="5" fill="#0D5C63" opacity="0.4"/>
+  <rect x="109" y="106" width="23" height="26" rx="5" fill="#C9A84C"/>
+
+  <!-- Wordmark -->
+  <text x="148" y="126" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="-0.5" fill="#13151A">KOMISSIO</text>
+
+  <!-- Gold line -->
+  <rect x="80" y="172" width="40" height="2" fill="#C9A84C"/>
+
+  <!-- Name -->
+  <text x="80" y="240" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#13151A" letter-spacing="-0.3">Ziad Hares</text>
+  <text x="80" y="272" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#0D5C63">Founder &amp; CEO</text>
+
+  <!-- Contact -->
+  <text x="80" y="340" font-family="'Courier New', Courier, monospace" font-size="13" fill="#6B6B72" letter-spacing="0.3">ziad@komissio.ae</text>
+  <text x="80" y="362" font-family="'Courier New', Courier, monospace" font-size="13" fill="#6B6B72" letter-spacing="0.3">komissio.ae</text>
+  <text x="80" y="384" font-family="'Courier New', Courier, monospace" font-size="13" fill="#6B6B72" letter-spacing="0.3">+971 50 000 0000</text>
+
+  <!-- Tagline -->
+  <text x="80" y="490" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#6B6B72">Operating System for UAE Business</text>
+
+  <!-- Corner decoration -->
+  <rect x="910" y="80" width="60" height="60" rx="8" fill="#0D5C63" opacity="0.06"/>
+  <rect x="910" y="80" width="60" height="22" rx="4" fill="#0D5C63" opacity="0.1"/>
+</svg>

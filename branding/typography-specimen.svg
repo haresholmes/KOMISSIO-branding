@@ -1,0 +1,62 @@
+<svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="600" fill="#F5F3EF"/>
+
+  <!-- Header -->
+  <text x="48" y="56" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#6B6B72">KOMISSIO — TYPOGRAPHY</text>
+  <line x1="48" y1="68" x2="852" y2="68" stroke="rgba(19,21,26,0.1)" stroke-width="1"/>
+
+  <!-- Primary Typeface -->
+  <text x="48" y="104" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#6B6B72">PRIMARY TYPEFACE — DM SANS</text>
+
+  <!-- Display -->
+  <text x="48" y="160" font-family="'Helvetica Neue', Arial, sans-serif" font-size="64" font-weight="700" fill="#13151A" letter-spacing="-2">Aa</text>
+  <text x="180" y="118" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">Display — 700 Bold</text>
+  <text x="180" y="136" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#13151A">64px / 72px / -2px tracking</text>
+  <text x="180" y="154" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0D5C63">Slide titles, hero statements</text>
+
+  <!-- Heading -->
+  <line x1="48" y1="184" x2="852" y2="184" stroke="rgba(19,21,26,0.06)" stroke-width="1"/>
+  <text x="48" y="216" font-family="'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#13151A" letter-spacing="-1">Section Heading</text>
+  <text x="540" y="200" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">Heading — 700 Bold — 36–48px / -0.02em tracking</text>
+  <text x="540" y="218" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0D5C63">Slide subheadings, section titles</text>
+
+  <!-- Body -->
+  <line x1="48" y1="244" x2="852" y2="244" stroke="rgba(19,21,26,0.06)" stroke-width="1"/>
+  <text x="48" y="272" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#13151A">Dubai companies deserve real infrastructure that works.</text>
+  <text x="48" y="292" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#6B6B72">One live, reconciled system for brokers, accountants, legal, and owners.</text>
+  <text x="700" y="272" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">Body — 400 Regular — 15–16px</text>
+  <text x="700" y="290" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0D5C63">Descriptions, supporting copy</text>
+
+  <!-- Caption / Mono -->
+  <line x1="48" y1="320" x2="852" y2="320" stroke="rgba(19,21,26,0.06)" stroke-width="1"/>
+  <text x="48" y="352" font-family="'Courier New', 'Courier', monospace" font-size="13" fill="#13151A" letter-spacing="1">DL RECEIVABLE / CR COMMISSION REVENUE — AED 42,000</text>
+  <text x="48" y="372" font-family="'Courier New', 'Courier', monospace" font-size="11" fill="#6B6B72" letter-spacing="1">SALES · ACCOUNTING · LEGAL · PROPERTY</text>
+  <text x="680" y="352" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">Mono — DM Mono — 10–13px</text>
+  <text x="680" y="370" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0D5C63">Labels, tags, data, codes</text>
+
+  <!-- Scale -->
+  <line x1="48" y1="400" x2="852" y2="400" stroke="rgba(19,21,26,0.1)" stroke-width="1"/>
+  <text x="48" y="428" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#6B6B72">TYPE SCALE</text>
+  <text x="48" y="460" font-family="'Helvetica Neue', Arial, sans-serif" font-size="48" font-weight="700" fill="#0D5C63">48</text>
+  <text x="130" y="460" font-family="'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#13151A">36</text>
+  <text x="210" y="460" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#13151A">28</text>
+  <text x="280" y="460" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#13151A">22</text>
+  <text x="336" y="460" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#13151A">18</text>
+  <text x="386" y="460" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#13151A">16</text>
+  <text x="426" y="460" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#13151A">14</text>
+  <text x="462" y="460" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#6B6B72">13</text>
+  <text x="496" y="460" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#6B6B72">12</text>
+  <text x="528" y="460" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">11</text>
+  <text x="556" y="460" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">10</text>
+
+  <line x1="48" y1="490" x2="852" y2="490" stroke="rgba(19,21,26,0.06)" stroke-width="1"/>
+  <text x="48" y="510" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#0D5C63">DM Sans</text>
+  <text x="48" y="526" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">Google Fonts — Variable (9–40pt optical sizing)</text>
+  <text x="400" y="510" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#0D5C63">DM Mono</text>
+  <text x="400" y="526" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">Google Fonts — Regular 400, Medium 500</text>
+
+  <!-- Footer -->
+  <line x1="48" y1="566" x2="852" y2="566" stroke="rgba(19,21,26,0.1)" stroke-width="1"/>
+  <text x="48" y="586" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">KOMISSIO Brand Standards 2024 — Confidential</text>
+  <text x="852" y="586" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72" text-anchor="end">komissio.ae</text>
+</svg>

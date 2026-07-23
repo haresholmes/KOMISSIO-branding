@@ -1,0 +1,82 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="560" fill="#F5F3EF"/>
+
+  <!-- Header -->
+  <text x="48" y="56" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#6B6B72">KOMISSIO — COLOR PALETTE</text>
+  <line x1="48" y1="68" x2="852" y2="68" stroke="rgba(19,21,26,0.1)" stroke-width="1"/>
+
+  <!-- PRIMARY COLORS -->
+  <text x="48" y="100" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#6B6B72">PRIMARY</text>
+
+  <!-- Deep Teal -->
+  <rect x="48" y="114" width="180" height="110" rx="8" fill="#0D5C63"/>
+  <text x="60" y="196" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Deep Teal</text>
+  <text x="48" y="242" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#13151A">#0D5C63</text>
+  <text x="48" y="258" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">R13 G92 B99</text>
+  <text x="48" y="274" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">Primary brand · Headings · CTA</text>
+
+  <!-- Teal Mid -->
+  <rect x="248" y="114" width="180" height="110" rx="8" fill="#1A7A82"/>
+  <text x="260" y="196" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Teal Mid</text>
+  <text x="248" y="242" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#13151A">#1A7A82</text>
+  <text x="248" y="258" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">R26 G122 B130</text>
+  <text x="248" y="274" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">Links · Hover states · Icons</text>
+
+  <!-- Teal Light -->
+  <rect x="448" y="114" width="180" height="110" rx="8" fill="#E6F2F3" stroke="rgba(19,21,26,0.08)" stroke-width="1"/>
+  <text x="460" y="196" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#0D5C63">Teal Light</text>
+  <text x="448" y="242" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#13151A">#E6F2F3</text>
+  <text x="448" y="258" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">R230 G242 B243</text>
+  <text x="448" y="274" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">Backgrounds · Tags · Tints</text>
+
+  <!-- SECONDARY COLORS -->
+  <text x="48" y="316" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#6B6B72">SECONDARY</text>
+
+  <!-- Gold -->
+  <rect x="48" y="330" width="180" height="110" rx="8" fill="#C9A84C"/>
+  <text x="60" y="412" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#13151A">Commission Gold</text>
+  <text x="48" y="458" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#13151A">#C9A84C</text>
+  <text x="48" y="474" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">R201 G168 B76</text>
+  <text x="48" y="490" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">Accent · Values · Highlights</text>
+
+  <!-- Gold Light -->
+  <rect x="248" y="330" width="180" height="110" rx="8" fill="#F5EDD6" stroke="rgba(19,21,26,0.08)" stroke-width="1"/>
+  <text x="260" y="412" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#8B6914">Gold Light</text>
+  <text x="248" y="458" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#13151A">#F5EDD6</text>
+  <text x="248" y="474" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B6B72">R245 G237 B214</text>
+  <text x="248" y="490" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">Alert backgrounds · Badges</text>
+
+  <!-- NEUTRALS -->
+  <text x="668" y="100" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#6B6B72">NEUTRALS</text>
+
+  <!-- Dark -->
+  <rect x="668" y="114" width="80" height="80" rx="6" fill="#0E1117"/>
+  <text x="668" y="212" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#13151A">#0E1117</text>
+  <text x="668" y="226" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">Slide backgrounds</text>
+
+  <!-- Ink -->
+  <rect x="764" y="114" width="80" height="80" rx="6" fill="#13151A"/>
+  <text x="764" y="212" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#13151A">#13151A</text>
+  <text x="764" y="226" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">Body text · Headings</text>
+
+  <!-- Muted -->
+  <rect x="668" y="246" width="80" height="80" rx="6" fill="#6B6B72"/>
+  <text x="668" y="344" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#13151A">#6B6B72</text>
+  <text x="668" y="358" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">Captions · Metadata</text>
+
+  <!-- Off-white -->
+  <rect x="764" y="246" width="80" height="80" rx="6" fill="#F5F3EF" stroke="rgba(19,21,26,0.1)" stroke-width="1"/>
+  <text x="764" y="344" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#13151A">#F5F3EF</text>
+  <text x="764" y="358" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">Page background</text>
+
+  <!-- Cream -->
+  <rect x="668" y="378" width="176" height="80" rx="6" fill="#FDFCF9" stroke="rgba(19,21,26,0.1)" stroke-width="1"/>
+  <text x="668" y="476" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#13151A">#FDFCF9</text>
+  <text x="668" y="490" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">Card surface · Light panels</text>
+
+  <!-- Footer -->
+  <line x1="48" y1="530" x2="852" y2="530" stroke="rgba(19,21,26,0.1)" stroke-width="1"/>
+  <text x="48" y="548" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72">KOMISSIO Brand Standards 2024 — Confidential</text>
+  <text x="852" y="548" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6B6B72" text-anchor="end">komissio.ae</text>
+</svg>
